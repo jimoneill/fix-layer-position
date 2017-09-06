@@ -1,0 +1,103 @@
+/**
+ * Fix Layer Position 1.0
+ *
+ * Copyright © 2017 Jim O'Neill
+ * Based heavily on:
+ * Sketch Commands ("Set Position") by Ale Muñoz: https://github.com/bomberstudios/sketch-commands
+ * Huge thanks for the plugin structure to:
+ * Sketch Remember Something by @abynim: https://github.com/abynim/SketchPlugin-Remember
+ * Thanks also to:
+ * Half Me by Roman Shamin: https://github.com/romashamin/half-me-sketch
+ * Move It by Dawid Wozniak: https://github.com/dawidw/move-it
+ *
+ * Created at Threat Stack Inc.
+ *
+ * Note: This plugin assumes a canvas/viewport size of 1400x720
+ * (Threat Stack's default minimum supported dimensions).
+ */
+
+@import 'lib/pluginDefaults.js'
+
+//-------------------------------------
+// Initialize w/Defaults
+//-------------------------------------
+
+var presets = {
+	x_pos: 0,
+	y_pos: 0
+}
+
+var pluginDomain = "com.jimoneill.sketchplugins.fix-layer-position";
+var userDefaults = initDefaults(pluginDomain, presets);
+
+
+//-------------------------------------
+// Run (Fix Layer Position)
+//-------------------------------------
+
+var onRun = function(context) {
+
+  var doc = context.document,
+    selection = context.selection
+
+  var first_item = selection[0],
+    x = userDefaults.x_pos,
+    y = userDefaults.y_pos
+
+  for (var i=0; i<[selection count]; i++) {
+    var layer = [selection objectAtIndex:i]
+
+    [[layer absoluteRect] setRulerX:x];
+    [[layer absoluteRect] setRulerY:y];
+
+  }
+
+};
+
+
+//-------------------------------------
+// Config (Configure Target Position)
+//-------------------------------------
+
+var onConfig = function(context) {
+
+  // Display configuration dialog
+
+  var alert = [COSAlertWindow new];
+  [alert addButtonWithTitle: 'OK'];
+  [alert addButtonWithTitle: 'Cancel'];
+
+  [alert setMessageText: 'Configure Target Position']
+
+  [alert addTextLabelWithValue: 'X,Y coordinates:'] // 0
+  [alert addTextFieldWithValue: (userDefaults.x_pos + "," + userDefaults.y_pos)] // 1
+
+  var response = [alert runModal]
+
+  if (response == "1000") {
+
+    position = valueAtIndex(alert, 1)
+
+    userDefaults.x_pos = eval(position.split(",")[0]),
+    userDefaults.y_pos = eval(position.split(",")[1])
+
+    saveDefaults(userDefaults)
+  }
+
+}
+
+
+//-------------------------------------
+// Helper Functions
+//-------------------------------------
+
+var elementAtIndex = function(view, index) {
+  return [view viewAtIndex: index]
+}
+
+var valueAtIndex = function(view, index) {
+  var element = elementAtIndex(view, index);
+  return [element stringValue]
+}
+
+// end

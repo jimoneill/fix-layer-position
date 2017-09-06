@@ -1,0 +1,34 @@
+{
+  "author" : "Jim O'Neill",
+  "commands" : [
+    {
+      "name" : "Fix Layer Position",
+      "script" : "script.cocoascript",
+      "shortcut": "control shift 9",
+      "handlers" : {
+        "run" : "onRun"
+      },
+      "identifier" : "fix-layer-position-run"
+    },
+    {
+      "name" : "Configure Target Position",
+      "script" : "script.cocoascript",
+      "handlers" : {
+        "run" : "onConfig"
+      },
+      "identifier" : "fix-layer-position-config"
+    }
+  ],
+  "menu" : {
+    "title" : "Fix Layer Position",
+    "items" : [
+      "fix-layer-position-run",
+      "fix-layer-position-config"
+    ]
+  },
+  "identifier" : "com.jimoneill.sketchplugins.fix-layer-position",
+  "version" : "1.0",
+  "description" : "Quickly move a layer to a predetermined (X,Y) position.",
+  "authorEmail" : "jim@jimoneill.net",
+  "name" : "Fix Layer Position"
+}
