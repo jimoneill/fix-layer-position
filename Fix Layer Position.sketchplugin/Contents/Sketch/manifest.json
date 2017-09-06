@@ -3,8 +3,10 @@
   "commands" : [
     {
       "name" : "Fix Layer Position",
+      "description": "Move selection to your target position.",
       "script" : "script.cocoascript",
       "shortcut": "control shift 9",
+      "icon": "icon-flp.png",
       "handlers" : {
         "run" : "onRun"
       },
@@ -12,7 +14,9 @@
     },
     {
       "name" : "Configure Target Position",
+      "description": "Update your target X,Y coordinate position.",
       "script" : "script.cocoascript",
+      "icon": "icon-flp.png",
       "handlers" : {
         "run" : "onConfig"
       },
