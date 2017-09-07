@@ -24,9 +24,9 @@ With Fix Layer Position, this takes less than a second.
 
 The plugin has two actions available:
 
-**Configure Target Position:** Set this up once, the way you want it, and Sketch will store & remember your target position. The default is 0,0 but you can pick any X,Y coordinate position.
+**Configure Target Position:** Set this up once, the way you want it, and Sketch will store & remember your target position. The default is `0,0` but you can pick any X,Y coordinate position.
 
-_Example:_ I work on a web application that's desktop-only. The minimum window size we design for is 1400x720, so that's the size I make all my screens as I design them, and that's the size at which I snap screenshots of the current app, to bring them into Sketch and play around with them. Through manual repositioning, I discovered that when I snap a screenshot of my app in Chrome, and bring it into Sketch, I need to place it at `-56,-106` relative to my 1400x720 artboard, so that the browser bar and drop shadow are hidden beyond the artboard edges. Therefore, I configure my target position to be `-56,-106`.
+> _Example:_ I work on a web application that's desktop-only. The minimum window size we design for is 1400x720, so that's the size I make all my screens as I design them, and that's the size at which I snap screenshots of the current app, to bring them into Sketch and play around with them. Through manual repositioning, I discovered that when I snap a screenshot of my app in Chrome, and bring it into Sketch, I need to place it at `-56,-106` relative to my 1400x720 artboard, so that the browser bar and drop shadow are hidden beyond the artboard edges. Therefore, I configure my target position to be `-56,-106`.
 
 **Fix Layer Position** _(ctrl+shift+9)_: If a layer is selected, instantly move that layer to your target position.
 
