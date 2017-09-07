@@ -2,9 +2,13 @@
 
 A Sketch plugin that lets you quickly move a layer to a predetermined (X,Y) position.
 
+In other words:
+1. Configure your target X,Y position, one time after install. Set it to 0,0 or -50,10 or whatever position you always need.
+2. Next time you need to move a layer to that position, just hit the keyboard shortcut and it's done.
+
 ## Why?
 
-This plugin is designed to speed up the following repetitive task that I do every day (and I assume I'm not alone):
+You might use this for any number of reasons. But I built it to speed up the following repetitive task that I do every day (and I'm probably not alone):
 
 1. View some page in my web application, in a browser.
 2. Take a screenshot of the browser window, at the same viewport size every time.
@@ -12,7 +16,7 @@ This plugin is designed to speed up the following repetitive task that I do ever
 
 When I quickly snap a screenshot of my browser window, I get the viewport – which I want – but I also get the browser bar, outer chrome, and Apple's big ol' window drop shadow. I don't need any of that! I could crop each screenshot after I take it, but that sounds like work, which sucks. Instead I really just want to move the screenshot on my artboard so that the viewport lines up with the artboard dimensions – in other words, so that the top left corner of the viewport (in the screenshot) is at position (0,0) on my artboard.
 
-This is precisely the task for which Fix Layer Position was built.
+With Fix Layer Position, this takes less than a second.
 
 ## Usage
 
@@ -24,6 +28,8 @@ _Example:_ I work on a web application that's desktop-only. The minimum window s
 
 **Fix Layer Position** _(ctrl+shift+9)_: If a layer is selected, instantly move that layer to your target position.
 
+You can also access both these actions in the `run` menu in Sketch Runner (see below).
+
 ## Installation
 
 You can download and install manually, but that also sounds like work. Instead:
@@ -33,5 +39,5 @@ You can download and install manually, but that also sounds like work. Instead:
 With Sketch Runner, just go to the `install` command and search for `Fix Layer Position`. Runner allows you to manage plugins and do much more to speed up your workflow in Sketch. [Download Runner here](http://www.sketchrunner.com).
 
 <a href="http://bit.ly/SketchRunnerWebsite">
-	<img width="160" height="41" src="http://bit.ly/RunnerBadgeBlue" alt="runner-badge-blue">
+  <img width="160" height="41" src="http://bit.ly/RunnerBadgeBlue" alt="runner-badge-blue">
 </a>
