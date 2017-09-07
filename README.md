@@ -6,6 +6,10 @@ In other words:
 1. Configure your target X,Y position, one time after install. Set it to `0,0` or `-50,10` or whatever position you always need.
 2. Any future time you need to move a layer to that position, just hit the keyboard shortcut and it's done.
 
+<a href="http://bit.ly/SketchRunnerWebsite">
+  <img width="160" height="41" src="http://bit.ly/RunnerBadgeBlue" alt="runner-badge-blue">
+</a>
+
 ## Why?
 
 You might use this for any number of reasons. But I built it to speed up the following repetitive task that I do every day (and I'm probably not alone):
@@ -40,6 +44,12 @@ You can download and install manually, but that also sounds like work. Instead:
 
 With Sketch Runner, just go to the `install` command and search for `Fix Layer Position`. Runner allows you to manage plugins and do much more to speed up your workflow in Sketch. [Download Runner here](http://www.sketchrunner.com).
 
-<a href="http://bit.ly/SketchRunnerWebsite">
-  <img width="160" height="41" src="http://bit.ly/RunnerBadgeBlue" alt="runner-badge-blue">
-</a>
+## Acknowledgements
+
+This plugin is *heavily* indebted to: 
+
+* [Sketch Commands by Ale Muñoz](https://github.com/bomberstudios/sketch-commands), for the "Set Position" command code.
+* [Sketch Remember Something by @abynim](https://github.com/abynim/SketchPlugin-Remember), for the structural template to handle local data storage.
+* [Half Me by Roman Shamin](https://github.com/romashamin/half-me-sketch) and [Move It by Dawid Wozniak](https://github.com/dawidw/move-it), for related inspiration.
+
+Licensed under the MIT License.
