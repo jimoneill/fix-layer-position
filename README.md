@@ -38,11 +38,14 @@ You can also access both these actions in the `run` menu in Sketch Runner (see b
 
 ## Installation
 
-You can download and install manually, but that also sounds like work. Instead:
-
 ### Install with Sketch Runner
 
 With Sketch Runner, just go to the `install` command and search for `Fix Layer Position`. Runner allows you to manage plugins and do much more to speed up your workflow in Sketch. [Download Runner here](http://www.sketchrunner.com).
+
+### Install manually
+
+1. Download and open fix-layer-position-master.zip
+2. Navigate to **Fix Layer Position.sketchplugin**. Double-clicking it should prompt Sketch to install the plugin and notify you upon success.
 
 ## Acknowledgements
 
@@ -53,3 +56,7 @@ This plugin is *heavily* indebted to:
 * [Half Me by Roman Shamin](https://github.com/romashamin/half-me-sketch) and [Move It by Dawid Wozniak](https://github.com/dawidw/move-it), for related inspiration.
 
 Licensed under the MIT License.
+
+## Contact
+
+<a href="https://twitter.com/oneill_jim">Follow @oneill_jim</a> on Twitter. For design-type stuff, check out [Pixels for Humans](http://www.pixelsforhumans.com).
