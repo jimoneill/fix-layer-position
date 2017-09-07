@@ -26,12 +26,12 @@ _Example:_ I work on a web application that's desktop-only. The minimum window s
 
 ## Installation
 
-You can download and install manually, but that also sounds like work. Why not...
+You can download and install manually, but that also sounds like work. Instead:
 
 ### Install with Sketch Runner
 
 With Sketch Runner, just go to the `install` command and search for `Fix Layer Position`. Runner allows you to manage plugins and do much more to speed up your workflow in Sketch. [Download Runner here](http://www.sketchrunner.com).
 
 <a href="http://bit.ly/SketchRunnerWebsite">
-  <img src="http://bit.ly/RunnerBadgeBlue">
+	<img width="160" height="41" src="http://bit.ly/RunnerBadgeBlue" alt="runner-badge-blue">
 </a>
