@@ -14,7 +14,24 @@ When I quickly snap a screenshot of my browser window, I get the viewport – w
 
 This is precisely the task for which Fix Layer Position was built.
 
-## What it does
+## Usage
 
-1. Lets you configure the (X,Y) position you want to use as a target.
-2. Moves a selected layer instantly to that position.
+The plugin has two actions available:
+
+**Configure Target Position:** Set this up once, the way you want it, and Sketch will store & remember your target position. The default is 0,0 but you can pick any X,Y coordinate position.
+
+_Example:_ I work on a web application that's desktop-only. The minimum window size we design for is 1400x720, so that's the size I make all my screens as I design them, and that's the size at which I snap screenshots of the current app, to bring them into Sketch and play around with them. Through manual repositioning, I discovered that when I snap a screenshot of my app in Chrome, and bring it into Sketch, I need to place it at (-56,-106) relative to my 1400x720 artboard, so that the browser bar and drop shadow are hidden beyond the artboard edges. Therefore, I configure my target position to be -56,-106.
+
+**Fix Layer Position** _(ctrl+shift+9)_: If a layer is selected, instantly move that layer to your target position.
+
+## Installation
+
+You can download and install manually, but that also sounds like work. Why not...
+
+### Install with Sketch Runner
+
+With Sketch Runner, just go to the `install` command and search for `Fix Layer Position`. Runner allows you to manage plugins and do much more to speed up your workflow in Sketch. [Download Runner here](http://www.sketchrunner.com).
+
+<a href="http://bit.ly/SketchRunnerWebsite">
+  <img src="http://bit.ly/RunnerBadgeBlue">
+</a>
