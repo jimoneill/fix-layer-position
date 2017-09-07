@@ -10,10 +10,9 @@
  * Half Me by Roman Shamin: https://github.com/romashamin/half-me-sketch
  * Move It by Dawid Wozniak: https://github.com/dawidw/move-it
  *
- * Created at Threat Stack Inc.
+ * Thanks also to Threat Stack Inc, the design environment
+ * that inspired the creation of this plugin.
  *
- * Note: This plugin assumes a canvas/viewport size of 1400x720
- * (Threat Stack's default minimum supported dimensions).
  */
 
 @import 'lib/pluginDefaults.js'
